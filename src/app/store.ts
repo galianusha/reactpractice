@@ -1,6 +1,6 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit'
 // import type { Action } from '@reduxjs/toolkit';
-import PostsReducer from '../features/posts/postSlice';
+import PostsReducer from '../features/posts/postSlice'
 
 // interface CounterState {
 //     value: number
@@ -15,10 +15,9 @@ import PostsReducer from '../features/posts/postSlice';
 // }
 
 export const store = configureStore({
-    reducer: {
-        posts: PostsReducer
-    },
-
+  reducer: {
+    posts: PostsReducer,
+  },
 })
 
 export type AppStore = typeof store
